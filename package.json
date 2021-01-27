@@ -26,7 +26,7 @@
     "start:p:watch-tailwind" : "onchange 'tailwind.config.js' 'src/**/*.css -e './src/assets/css/tailwind.css -- npm run start:tailwind",
     "start:p:react": "react-scripts start",
     "build" : "run-s build:** -l",
-    "build:a:tailwind": "SET NODE_ENV=production npm run start:tailwind",
+    "build:a:tailwind": "npm run start:tailwind",
     "build:b:react": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
