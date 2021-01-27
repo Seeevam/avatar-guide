@@ -25,10 +25,7 @@ function App() {
      <NationPage name={name[0]} url={name[1]} />
      } /> )
     }
-    {/* {
-      ["water","earth","fire","air"]
-      .map((nationName, i)=><Route path={`/${nationName}/:characterName`} key={i} render={()=><CharacterExpanded/>}/>)
-    } */}
+
     <Route path={`/:nationName/:characterName`} render={(props)=><CharacterExpanded  {...props} />} />
 
 

@@ -24,10 +24,10 @@ const SearchCharacter = () => {
     return (
         <div className='search-character-container' >
             <div className='search-container' >
-                <input className='search-bar' type='text' placeholder="Seach by name..."
+                <input className='search-bar w-64 sm:w-1/2 rounded-lg ' type='text' placeholder="Seach by name..."
                 ref={textInput} onChange={evt => setSearchedState(evt.target.value) }  />
-                <button className='search-button' onClick={searchCharacter} >Search</button>
-                <button className='clear-button' onClick={clearCharacter}>Clear</button>
+                <button className='search-button px-4 py-1 rounded-md ' onClick={searchCharacter} >Search</button>
+                <button className='clear-button px-5 py-1 rounded-md ' onClick={clearCharacter}>Clear</button>
             </div>
             { searchedCharacter?
             <div className='searched-characters-container'>

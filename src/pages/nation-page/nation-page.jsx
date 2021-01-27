@@ -25,10 +25,10 @@ const NationPage = ({ name, url }) => {
 
 
     return (
-        <div className='nation-page'>
+        <div className='nation-page items-center'>
             <h1 className='title'>{name.toUpperCase()} NATION</h1>
-            <figure>
-                <img src={url} alt={`${name}`}></img>
+            <figure className='mr-0 items-center ' >
+                <img className='inline w-36 sm:w-60 ' src={url} alt={`${name}`}></img>
             </figure>
             <div className='characters'>
                 {characters.map((character, i) =>
